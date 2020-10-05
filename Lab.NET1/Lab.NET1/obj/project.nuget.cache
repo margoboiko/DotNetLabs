@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4TAd2BPuqpmuA+jWYds+wVy73GsBrCxQ8aADpL4t4FwrJML4u+9pYDIW8JzmFV9pvyZd11li2E29X7HpTA+K/Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Rita\\source\\repos\\Lab.NET1\\Lab.NET1\\Lab.NET1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rita\\.nuget\\packages\\npgsql\\4.1.5\\npgsql.4.1.5.nupkg.sha512",
+    "C:\\Users\\Rita\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,15 @@
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\bin\Debug\netcoreapp3.1\Lab.NET1.exe
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\obj\Debug\netcoreapp3.1\Lab.NET1.csprojAssemblyReference.cache
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\obj\Debug\netcoreapp3.1\Lab.NET1.AssemblyInfoInputs.cache
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\obj\Debug\netcoreapp3.1\Lab.NET1.AssemblyInfo.cs
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\bin\Debug\netcoreapp3.1\Lab.NET1.deps.json
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\bin\Debug\netcoreapp3.1\Lab.NET1.runtimeconfig.json
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\bin\Debug\netcoreapp3.1\Lab.NET1.runtimeconfig.dev.json
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\bin\Debug\netcoreapp3.1\Lab.NET1.dll
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\bin\Debug\netcoreapp3.1\Lab.NET1.pdb
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\obj\Debug\netcoreapp3.1\Lab.NET1.csproj.CoreCompileInputs.cache
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\obj\Debug\netcoreapp3.1\Lab.NET1.csproj.CopyComplete
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\obj\Debug\netcoreapp3.1\Lab.NET1.dll
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\obj\Debug\netcoreapp3.1\Lab.NET1.pdb
+C:\Users\Rita\source\repos\Lab.NET1\Lab.NET1\obj\Debug\netcoreapp3.1\Lab.NET1.genruntimeconfig.cache
