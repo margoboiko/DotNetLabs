@@ -75,7 +75,7 @@ namespace Lab1
                 PrintData(city);
 
                 Console.WriteLine("\n\nPerson made at least 2 calls to different cities:\n");
-                List<object[]> calling = GetResult(connection, "DISTINCT surname||' '||name||' '||fname", "person CROSS JOIN calling WHERE(SELECT COUNT(*) FROM calling WHERE person.id = calling.personid) > 1");
+                List<object[]> calling = GetResult(connection, "p.surname||' '||p.name||' '||p.fname AS person", "calling call INNER JOIN person p ON p.id = call.personid Group by  p.surname || ' ' || p.name || ' ' || p.fname Having count(*) > 1 ");
                 PrintData(calling);
             }
             catch (NpgsqlException e)
