@@ -1,0 +1,54 @@
+﻿@page
+@model NET5.Pages.Callings.IndexModel
+
+@{
+    ViewData["Title"] = "Список дзвінків";
+}
+
+<h1>Список дзвінків</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Calling[0].Data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calling[0].During)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calling[0].City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calling[0].Person)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Calling) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.During)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Person.Id)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

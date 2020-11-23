@@ -1,0 +1,47 @@
+﻿@page
+@model NET5.Pages.Callings.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Calling</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Calling.Data" class="control-label"></label>
+                <input asp-for="Calling.Data" class="form-control" />
+                <span asp-validation-for="Calling.Data" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calling.During" class="control-label"></label>
+                <input asp-for="Calling.During" class="form-control" />
+                <span asp-validation-for="Calling.During" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calling.Personid" class="control-label"></label>
+                <select asp-for="Calling.Personid" class ="form-control" asp-items="ViewBag.Personid"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calling.Cityid" class="control-label"></label>
+                <select asp-for="Calling.Cityid" class ="form-control" asp-items="ViewBag.Cityid"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

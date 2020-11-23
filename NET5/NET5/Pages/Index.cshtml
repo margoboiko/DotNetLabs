@@ -1,0 +1,62 @@
+﻿@page
+@model IndexModel
+
+@{
+	ViewData["Title"] = "Home page";
+	var context = new NET5.Models.phone_callContext();
+	var calling = context.Person
+			.Join(context.Calling, person => person.Id, calling => calling.Personid,
+			(p, c) => new { PersonId = p.Id, Surname = p.Surname, Name = p.Name, FName = p.Fname, c.Personid })
+			.ToList()
+			.GroupBy(table => new { table.PersonId, table.Surname, table.Name, table.FName })
+			.Where(g => g.Count() >= 2);
+}
+
+	<div class="text-center">
+		<h5 class="display-3">База даних</h5>
+		<p>Користувачі, які подзвонили в хоча б 2 міста:</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>
+						Номер
+					</th>
+					<th>
+						Прізвище
+					</th>
+					<th>
+						Ім'я
+					</th>
+					<th>
+						По батькові
+					</th>
+					<th>
+						Кількість міст
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in calling)
+				{
+					<tr>
+						<td>
+							@Html.DisplayFor(modelItem => item.Key.PersonId)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Key.Surname)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Key.Name)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Key.FName)
+						</td>
+						<td>
+							@item.Count()
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>

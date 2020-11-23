@@ -1,0 +1,43 @@
+﻿@page
+@model NET5.Pages.Callings.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Calling</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calling.Data)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calling.Data)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calling.During)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calling.During)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calling.City)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calling.City.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calling.Person)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calling.Person.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Calling.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

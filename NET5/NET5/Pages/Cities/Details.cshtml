@@ -1,0 +1,37 @@
+﻿@page
+@model NET5.Pages.Cities.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>City</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.City.City1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.City.City1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.City.Code)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.City.Code)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.City.Tariff)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.City.Tariff)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.City.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
